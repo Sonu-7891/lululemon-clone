@@ -12,7 +12,7 @@ const ProfileMenu = () => {
   // const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const navigate = useNavigate();
-  const isAuthenticated = !!localStorage.getItem("accessToken");
+  const isAuthenticated =localStorage.getItem("accessToken");
 
 
   // Check if user is logged in
@@ -53,7 +53,7 @@ const ProfileMenu = () => {
 
       {/* Dropdown Menu */}
       {showDropdown && (
-        <div className="absolute pt-8 bg-white shadow-lg  p-4 z-5 w-50">
+        <div className="absolute top-14 pt-8 bg-white shadow-lg  p-6 z-1 w-50">
           <Link
             to="/signup"
             className="block text-gray-800 hover:text-gray-600 mb-2"

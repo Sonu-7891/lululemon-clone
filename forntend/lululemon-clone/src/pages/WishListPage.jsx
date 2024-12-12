@@ -97,14 +97,19 @@ const WishListPage = () => {
           </span>
         </div>
       </div>
-      <h1 className="text-2xl font-bold mb-5">Wish List</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <h1 className="text-2xl ml-10 mt-20 font-bold mb-5">Wish List</h1>
+      <div className="grid  mt-10 grid-cols-1 md:grid-cols-2 gap-4">
         {wishlist.length > 0 ? (
           wishlist.map((item) => (
             <div
               key={item.product._id}
-              className="border rounded-lg p-4 shadow-sm flex justify-between items-center"
+              className="border ml-10 rounded-lg p-4 shadow-sm flex justify-between items-center"
             >
+              <img
+                src={item.product.imageUrl[0]}
+                alt={item.product.name}
+                className="w-34 h-32 object-cover rounded-lg"
+              />
               <div>
                 <h2 className="font-medium">{item.product.name}</h2>
                 <p className="text-gray-500">

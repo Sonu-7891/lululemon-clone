@@ -2,7 +2,9 @@ import axios from "axios";
 
 // Create an Axios instance with default settings
 const API = axios.create({
-  baseURL: process.env.REACT_APP_BACKEND_API_URI || "http://localhost:5000", // Update with your backend URL
+  baseURL:
+    process.env.REACT_APP_BACKEND_API_URI ||
+    "https://lululemon-clone-backend.onrender.com", // Update with your backend URL
   withCredentials: true, // Ensures cookies are sent with requests
 });
 

@@ -13,11 +13,7 @@ This repository contains the source code for a **Lululemon.com** clone, designed
 - Custom fonts and icons (FontAwesome integration).
 - Video playback for promotional sections.
 
-### **Backend Features**
-- REST API for handling products, categories, user authentication, and orders.
-- JWT-based authentication.
-- CRUD operations for user accounts, products, and cart management.
-- MongoDB database integration.
+
 
 ### **Functionalities**
 - User profile management.
@@ -35,27 +31,13 @@ This repository contains the source code for a **Lululemon.com** clone, designed
 - FontAwesome for icons
 - React Router for navigation
 
-### **Backend**
-- Node.js
-- Express.js
-- MongoDB with Mongoose ORM
-- JSON Web Tokens (JWT) for authentication
 
----
-
-## Getting Started
-
-### **Prerequisites**
-Make sure you have the following installed on your local system:
-- Node.js (v16+)
-- npm or yarn
-- MongoDB (local or cloud instance)
 
 ### **Installation**
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/lululemon-clone.git
+   git clone https://github.com/Sonu-7891/lululemon-clone.git
    cd lululemon-clone
    ```
 
@@ -83,19 +65,14 @@ JWT_SECRET=your_jwt_secret
 
 ### **Running the Project**
 
-1. Start the backend server:
-   ```bash
-   cd backend
-   npm run dev
-   ```
 
-2. Start the frontend development server:
+1. Start the frontend development server:
    ```bash
    cd frontend
    npm start
    ```
 
-3. Open your browser and visit:
+2. Open your browser and visit:
    ```
 
    http://localhost:3000
@@ -137,18 +114,15 @@ JWT_SECRET=your_jwt_secret
 
 2. Deploy the `build/` folder to a hosting provider like Vercel or Netlify.
 
-### **Backend**
-Deploy the backend to a platform like Heroku, AWS, or Render.
 
----
 
 ## Screenshots
 
 ### **Home Page**
-![Home Page](https://via.placeholder.com/800x400)
+![Home Page](c:\Users\91789\Pictures\Screenshots\Screenshot 2024-12-12 154222.png)
 
 ### **Category Section**
-![Category Section](https://via.placeholder.com/800x400)
+![Category Section](c:\Users\91789\Pictures\Screenshots\Screenshot 2024-12-12 153920.png)
 
 ---
 
@@ -167,7 +141,7 @@ Contributions are welcome! Follow these steps:
    ```
 4. Push to the branch:
    ```bash
-   git push origin feature-name
+   git push origin main
    ```
 5. Create a Pull Request.
 

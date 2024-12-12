@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CartIcon from "./CartIcon";
 import FavoriteIcon from "./FavoriteIcon";
 import ProfileMenu from "./ProfileMenu";
@@ -10,6 +10,15 @@ const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
+  const isAuthenticated = localStorage.getItem("accessToken");
+   const navigate = useNavigate()
+ const handleClick=()=>{
+    if(!isAuthenticated){
+      navigate('/login');
+    }else{
+      navigate("/wishlist");
+    }
+  }
 
   const handleSearch = (query) => {
     Api.searchProducts({ query })
@@ -31,6 +40,7 @@ const Navbar = () => {
 
       {/* Secondary Navbar */}
       <div className="fixed top-6 w-full flex justify-between bg-blue-50 text-gray-500 border-b py-1 px-4">
+        <div></div>
         <div className="flex  gap-4">
           <Link
             to="/store-locator"
@@ -125,9 +135,9 @@ const Navbar = () => {
             />
           </button>
           <ProfileMenu />
-          <Link to="/wishlist">
+          <div onClick={handleClick}>
             <FavoriteIcon />
-          </Link>
+          </div>
           <Link to="/cart">
             <CartIcon />
           </Link>
