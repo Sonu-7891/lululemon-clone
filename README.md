@@ -119,7 +119,7 @@ JWT_SECRET=your_jwt_secret
 ## Screenshots
 
 ### **Home Page**
-![Home Page](c:\Users\91789\Pictures\Screenshots\Screenshot 2024-12-12 154222.png)
+![Home Page](lululemon-clone\forntend\lululemon-clone\public\Screenshot 2024-12-12 153920.png)
 
 ### **Category Section**
 ![Category Section](c:\Users\91789\Pictures\Screenshots\Screenshot 2024-12-12 153920.png)
