@@ -19,7 +19,6 @@ API.interceptors.request.use(
   },
   (error) => Promise.reject(error)
 );
-console.log("Axios Base URL:", API.defaults.baseURL);
 // API calls
 export const Api = {
   // Authentication
